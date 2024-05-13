@@ -1,0 +1,43 @@
+html {
+  background-color: #171717;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 50px 20px 0 20px;
+}
+
+/* --neutral--800: #171717;
+--neutral--400: #7f7f7f;
+--neutral--100: white;
+--neutral--500: #545454;
+--neutral--700: #202020;
+--neutral--600: #2a2a2a;
+--general-shadow--shadow-1: rgba(20,20,43,.06);
+--colors--purple-100: #d0c5d2;
+--accent--primary-color: #efb920;
+--accent--secondary-color: #ca9400;
+--neutral--300: darkgrey;
+--neutral--200: #d4d4d4;
+--colors--blue-400: #247692;
+--colors--blue-300: #508aa8;
+--colors--blue-200: #96b8ca;
+--colors--blue-100: #dce7ed;
+--colors--green-300: #449b00;
+--colors--green-200: #a1cd7f;
+--colors--red-400: #9e2b25;
+--colors--red-300: #ca2e55;
+--colors--red-200: #e496aa;
+--colors--red-100: #f4d5dd;
+--colors--horchata-400: #dacec8;
+--colors--horchata-300: #e1d7d3;
+--colors--horchata-200: #e8e1de;
+--colors--purple-300: #8a7090;
+--colors--purple-200: #ad9ab1;
+--colors--purple-400: #442b48;
+--colors--green-400: #11845b;
+--colors--green-100: #def2e6;
+--colors--horchata-100: #f0ebe9;
+--custom-colors--gunmetal: #253137; */
