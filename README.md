@@ -1,3 +1,6 @@
+# Release Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/807d2500-49e0-446a-a2e3-67cdb5335a4d/deploy-status)](https://app.netlify.com/sites/valengutie/deploys)
+
 # Astro Starter Kit: Basics
 
 ```sh
