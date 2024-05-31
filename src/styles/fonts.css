@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-LightIt.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-MediumIt.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-BoldIt.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatinaEssential';
+  src: url('/fonts/LatinaEssential/LatinaEssential-HeavyIt.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}

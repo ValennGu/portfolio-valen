@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const { url, icon } = Astro.props;
+---
+<a href={url}>
+  <Icon name={icon} class="icon" />
+</a>
+
+<style>
+  .icon {
+    color: var(--accent--primary-color);
+    font-size: 36px;
+  }
+</style>
