@@ -1,6 +1,5 @@
 ---
 const { pathname } = Astro.url;
-
 const pages = [
   { url: '/about', title: 'About' },
   { url: '/portfolio', title: 'Portfolio' },
@@ -8,7 +7,11 @@ const pages = [
 ];
 ---
 <section class="navigation-wrapper">
-  {pages.map(({url, title}) => <a href={url} class:list={{active: pathname === url}}>{title}</a>)}
+  {pages.map(({url, title}) => {
+    const isActive = pathname.replaceAll('/', '') === url.replaceAll('/', '');
+
+    return <a href={url} class:list={{active: isActive}}>{title}</a>
+  })}
 </section>
 
 <style>
