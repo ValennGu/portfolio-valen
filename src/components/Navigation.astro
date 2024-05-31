@@ -1,9 +1,14 @@
 ---
+const { pathname } = Astro.url;
+
+const pages = [
+  { url: '/about', title: 'About' },
+  { url: '/portfolio', title: 'Portfolio' },
+  { url: '/blog', title: 'Blog' },
+];
 ---
 <section class="navigation-wrapper">
-  <a href="/about">About</a>
-  <a href="/portfolio">Portfolio</a>
-  <a href="/blog">Blog</a>
+  {pages.map(({url, title}) => <a href={url} class:list={{active: pathname === url}}>{title}</a>)}
 </section>
 
 <style>
@@ -19,5 +24,9 @@
     &:hover {
       color: var(--accent--primary-color);
     }
+  }
+
+  .active {
+    color: var(--accent--primary-color);
   }
 </style>
