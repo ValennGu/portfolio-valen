@@ -1,6 +1,25 @@
 ---
+import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  Hello this is my hero
+  <div class="wrapper">
+    <section class="section-left">
+      <Hero />
+    </section>
+    <section class="section-right">
+    </section>
+  </div>
 </BaseLayout>
+
+<style>
+  .wrapper {
+    display: flex;
+  }
+  .section-left {
+    flex-basis: 60%;
+  }
+  .section-right {
+    flex-basis: 40%;
+  }
+</style>
