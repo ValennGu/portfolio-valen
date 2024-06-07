@@ -1,0 +1,36 @@
+---
+import HeroProject from "./HeroProject.astro";
+
+const projects = [
+  {
+    title: "Celular Automata",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an",
+    favorite: true,
+  },
+  {
+    title: "Personal Portfolio",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an",
+    favorite: false,
+  },
+  {
+    title: "Personal Portfolio",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an",
+    favorite: false,
+  }
+];
+---
+
+<h2>MOST PROUD OF</h2>
+{projects.filter(p => p.favorite).map(({title, description}) => <HeroProject title={title} description={description} />)}
+<h2>MORE ABOUT ME</h2>
+{projects.filter(p => !p.favorite).map(({title, description}) => <HeroProject title={title} description={description} />)}
+
+<style>
+  h2 {
+    color: var(--colors--horchata-200);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-top: var(--spacing--default);
+  }
+</style>
