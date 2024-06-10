@@ -1,13 +1,13 @@
 ---
-import Logo from './Logo.astro';
-import Navigation from './Navigation.astro';
+import HeaderLogo from './HeaderLogo.astro';
+import HeaderNavigation from './HeaderNavigation.astro';
 import IconButton from './IconButton.astro';
 ---
 <header>
   <section>
-    <Logo />
+    <HeaderLogo />
     <div class="header-divider" />
-    <Navigation />
+    <HeaderNavigation />
   </section>
   <section>
     <IconButton icon="ri:github-fill" url="https://github.com/ValennGu"/>
@@ -17,17 +17,18 @@ import IconButton from './IconButton.astro';
 
 <style>
   header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 24px 64px 0px 64px;
     margin-bottom: 24px;
+    width: 100%;
   }
 
   section {
-    height: 50px;
     display: flex;
-    gap: var(--spacing--default);
     align-items: center;
+    gap: var(--spacing--default);
+    height: 50px;
   }
 
   .header-divider {

@@ -1,5 +1,5 @@
 ---
-import HeroProject from "./HeroProject.astro";
+import FeedItem from "./FeedItem.astro";
 
 const projects = [
   {
@@ -19,11 +19,10 @@ const projects = [
   }
 ];
 ---
-
 <h2>MOST PROUD OF</h2>
-{projects.filter(p => p.favorite).map(({title, description}) => <HeroProject title={title} description={description} />)}
+{projects.filter(p => p.favorite).map(({title, description}) => <FeedItem title={title} description={description} />)}
 <h2>MORE ABOUT ME</h2>
-{projects.filter(p => !p.favorite).map(({title, description}) => <HeroProject title={title} description={description} />)}
+{projects.filter(p => !p.favorite).map(({title, description}) => <FeedItem title={title} description={description} />)}
 
 <style>
   h2 {

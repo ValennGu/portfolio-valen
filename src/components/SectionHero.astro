@@ -1,0 +1,27 @@
+---
+import Hero from './Hero.astro';
+import Feed from './Feed.astro';
+---
+
+<section>
+  <div class="left">
+    <Hero />
+  </div>
+  <div class="right">
+    <Feed />
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    padding: 24px 64px 0px 64px;
+    gap: var(--spacing--default);
+  }
+  .left {
+    flex-basis: 60%;
+  }
+  .right {
+    flex-basis: 40%;
+  }
+</style>

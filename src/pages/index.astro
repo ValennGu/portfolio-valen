@@ -1,28 +1,9 @@
 ---
-import Feed from '../components/Feed.astro';
-import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHero from '../components/SectionHero.astro';
+import SectionAbout from '../components/SectionAbout.astro';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  <div class="wrapper">
-    <section class="section-left">
-      <Hero />
-    </section>
-    <section class="section-right">
-      <Feed />
-    </section>
-  </div>
+  <SectionHero />
+  <SectionAbout />
 </BaseLayout>
-
-<style>
-  .wrapper {
-    display: flex;
-    gap: var(--spacing--default);
-  }
-  .section-left {
-    flex-basis: 60%;
-  }
-  .section-right {
-    flex-basis: 40%;
-  }
-</style>
