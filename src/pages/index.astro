@@ -1,11 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionHero from '../components/SectionHero.astro';
-import SectionAbout from '../components/SectionAbout.astro';
 import Project from '../components/Project.astro';
+
+import projects from './../data/projects.json';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  <!-- <SectionHero />
-  <SectionAbout /> -->
-  <Project title="Cellular Automata" description="This is a paid, fully remote, full-time role open to international applicants.As a Senior Front End Engineer, you will partner closely with GreatFrontEnd's engineering, product and design teams to conceptualize, scope and build new projects from the ground up. You will work in an environment with a heavy emphasis on highly-polished user experiences, experimentation, and front end infrastructure. In doing so, you will grow rapidly in your front end skills, while building projects and tools that millions of front end engineers will potentially use." />
+  {projects.map(p => 
+    <Project
+      title={p.title}
+      description={p.description}
+      thumbnail={p.thumbnail}
+      technologies={p.technologies}
+      actions={p.actions}
+    />
+  )}
 </BaseLayout>

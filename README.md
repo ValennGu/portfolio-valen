@@ -1,6 +1,12 @@
 # Release Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/807d2500-49e0-446a-a2e3-67cdb5335a4d/deploy-status)](https://app.netlify.com/sites/valengutie/deploys)
 
+# Docu
+
+Link to astro-icon iconify.
+https://icon-sets.iconify.design/ri/?keyword=Remi
+
+
 # Astro Starter Kit: Basics
 
 ```sh

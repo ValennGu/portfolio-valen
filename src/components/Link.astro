@@ -1,0 +1,40 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { text, href, icon, iconPosition = 'left' } = Astro.props;
+---
+<a href={href}>
+  {iconPosition == 'left' && <Icon name={icon} class="icon" />}
+  {text}
+  {iconPosition == 'right' && <Icon name={icon} class="icon" />}
+</a>
+
+<style>
+  a {
+    background-color: rgb(24, 24, 27, 1);
+    text-decoration: none;
+    color: rgb(228, 228, 231, 1);
+    font-size: .75rem;
+    line-height: 1rem;
+    border: solid 1px rgb(63, 63, 70, 1);
+    border-radius: 30px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(39, 39, 42, .7);
+    }
+  }
+
+  .icon {
+    font-size: 1rem;
+    color: rgb(228, 228, 231, 1);
+  }
+</style>
