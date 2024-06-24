@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { name, icon } = Astro.props;
+
+let iconColor;
+
+switch(name) {
+  case "Javascript":
+    iconColor = "rgb(239, 216, 26)";
+    break;
+  case "React":
+    iconColor = "rgb(94, 210, 243)";
+    break;
+  case "Svelte":
+    iconColor = "rgb(247, 59, 1)";
+    break;
+  case "CSS":
+    iconColor = "rgb(26, 110, 180)";
+    break;
+  case "Firebase":
+    iconColor = "rgb(247, 197, 40)";
+    break;
+  default:
+    iconColor = "rgb(228, 228, 231, 1)";
+    break;
+}
+---
+<div class="tech-container">
+  <Icon name={icon} class="icon" aria-label={name} />
+  <span>{name}</span>
+</div>
+
+<style define:vars={{ iconColor }}>
+  .tech-container {
+    background-color: rgba(39, 39, 42, .7);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 8px;
+    padding: .2rem .65rem .2rem .65rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+    color: var(--iconColor);
+  }
+
+  span {
+    font-size: .75em;
+    color: rgb(228, 228, 231, 1);
+  }
+</style>

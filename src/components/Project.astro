@@ -1,0 +1,61 @@
+---
+import Tech from './Tech.astro';
+import Link from './Link.astro';
+import img from './../assets/financial-dashboard.png';
+
+const { title, description, thumbnail, technologies, actions } = Astro.props;
+---
+<div class="project-container">
+  <img src={img.src} alt={`${title}`} width="50%"/>
+  <div>
+    <h2>{title}</h2>
+    <div class="row">
+      {technologies && technologies.map((tech: { name: any; icon: any; }) =>
+        <Tech
+          name={tech.name}
+          icon={tech.icon}
+        />
+      )}
+    </div>
+    <p>{description}</p>
+    <div class="row">
+      {actions && actions.map((action: { name: any; url: any; icon: any; iconPosition: any; }) =>
+        <Link
+          text={action.name}
+          href={action.url}
+          icon={action.icon}
+          iconPosition={action.iconPosition}
+        />
+      )}
+    </div>
+  </div>
+</div>
+
+<style>
+  .project-container {
+    display: flex;
+    gap: 24px;
+    max-width: 1000px;
+    max-height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .row {
+    display: flex;
+    gap: .5rem;
+  }
+
+  img {
+    flex: 1 1;
+    border-radius: .5rem;
+    border: solid 1px rgb(39, 39, 42, 1);
+    object-fit: cover;
+    object-position: top;
+  }
+
+  div {
+    flex: 1 1;
+  }
+</style>

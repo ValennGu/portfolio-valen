@@ -1,9 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionHero from '../components/SectionHero.astro';
-import SectionAbout from '../components/SectionAbout.astro';
+import Project from '../components/Project.astro';
+
+import projects from './../data/projects.json';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  <SectionHero />
-  <SectionAbout />
+  {projects.map(p => 
+    <Project
+      title={p.title}
+      description={p.description}
+      thumbnail={p.thumbnail}
+      technologies={p.technologies}
+      actions={p.actions}
+    />
+  )}
 </BaseLayout>
