@@ -6,15 +6,18 @@
     "technologies": [
       {
         "name": "Svelte",
-        "icon": "ri:svelte-fill"
+        "icon": "ri:svelte-fill",
+        "color": "#F73A01"
       },
       {
         "name": "Javascript",
-        "icon": "ri:javascript-fill"
+        "icon": "ri:javascript-fill",
+        "color": "#EFD81A"
       },
       {
         "name": "CSS",
-        "icon": "ri:css3-fill"
+        "icon": "ri:css3-fill",
+        "color": "#196DB4"
       }
     ],
     "actions": [
@@ -38,15 +41,18 @@
     "technologies": [
       {
         "name": "React",
-        "icon": "ri:reactjs-fill"
+        "icon": "ri:reactjs-fill",
+        "color": "#5DD1F3"
       },
       {
         "name": "Javascript",
-        "icon": "ri:javascript-fill"
+        "icon": "ri:javascript-fill",
+        "color": "#EFD81A"
       },
       {
         "name": "Firebase",
-        "icon": "ri:firebase-fill"
+        "icon": "ri:firebase-fill",
+        "color": "#F7C528"
       }
     ],
     "actions": [

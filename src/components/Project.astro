@@ -1,5 +1,5 @@
 ---
-import Tech from './Tech.astro';
+import Tag from './Tag.astro';
 import Link from './Link.astro';
 import img from './../assets/financial-dashboard.png';
 
@@ -10,10 +10,11 @@ const { title, description, thumbnail, technologies, actions } = Astro.props;
   <div>
     <h2>{title}</h2>
     <div class="row">
-      {technologies && technologies.map((tech: { name: any; icon: any; }) =>
-        <Tech
+      {technologies && technologies.map((tech: { name: any; icon: any; color: any }) =>
+        <Tag
           name={tech.name}
           icon={tech.icon}
+          color={tech.color}
         />
       )}
     </div>

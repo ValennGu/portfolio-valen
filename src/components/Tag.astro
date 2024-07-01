@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { name, icon, color = "#E4E4E7" } = Astro.props;
+---
+
+<div class="tag-container">
+  {icon && <Icon name={icon} class="icon" aria-label={name} />}
+  <span>{name}</span>
+</div>
+
+<style define:vars={{ color }}>
+  .tag-container {
+    background-color: rgba(39, 39, 42, .7);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-radius: 8px;
+    padding: .2rem .65rem .2rem .65rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+    color: var(--color);
+  }
+
+  span {
+    font-size: .75em;
+    color: var(--color-clear-white);
+  }
+</style>
