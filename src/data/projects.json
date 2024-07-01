@@ -1,7 +1,7 @@
 [
   {
     "title": "Cellular Automata",
-    "thumbnail": "https://media.licdn.com/dms/image/C4D12AQHApm5Gdn02wQ/article-cover_image-shrink_600_2000/0/1582832765222?e=2147483647&v=beta&t=P71TRnLux6pMQMCA0T4U6yjFAuzMBYERqQ2GIlNM_70",
+    "thumbnail": "/assets/cellular-automata.png",
     "description": "This project aims to create an interactive and educational visualization of Conway's Game of Life, a famous cellular automaton devised by the British mathematician John Horton Conway in 1970.",
     "technologies": [
       {
@@ -36,7 +36,7 @@
   },
   {
     "title": "Financial Dashboard",
-    "thumbnail": "https://www.frontendmag.com/wp-content/uploads/2023/05/svelte-vs-sveltekit.jpeg",
+    "thumbnail": "/assets/financial-dashboard.png",
     "description": "A user-friendly and intuitive personal expense tracking application designed to help me manage my finances efficiently. Provides a comprehensive tool for logging, categorizing, and analyzing daily expenses.",
     "technologies": [
       {
