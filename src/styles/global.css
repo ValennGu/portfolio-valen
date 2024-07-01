@@ -1,6 +1,7 @@
 :root {
   --color-clear-white: #e4e4e7;
   --color-shy-white: #a1a1aa;
+  --breakpoint-820: 820px;
 }
 
 html {
