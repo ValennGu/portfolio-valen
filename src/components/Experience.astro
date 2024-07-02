@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import Link from "./Link.astro";
+import Tag from "./Tag.astro";
 
 const {
   companyName,
@@ -13,13 +14,21 @@ const {
 ---
 <div class="experience-container">
   <div class="left box">
-    <img src={logoUrl} alt={`${companyName}`} width="50px" height="50px"/>
-    <h2>{jobTitle}</h2>
-    <!-- <Icon name="ri:calendar-fill" class="icon" aria-label="period" />
-    <p>{period.from} - {period.to}</p> -->
+    <img src={logoUrl} alt={`${companyName}`} width="70px" height="70px"/>
+    <div class="info">
+      <div class="info-2">
+        <h2>{companyName}</h2>
+        <Tag name={period.timeSpent} icon="ri:timer-2-line" color="#928BF9"/>
+      </div>
+      <div class="date">
+        <Icon name="ri:calendar-fill" class="icon" aria-label="period" />
+        <p>{period.from} - {period.to}</p>
+      </div>
+    </div>
   </div>
+  
   <div class="right box">
-    <h3>{companyName}</h3>
+    <h3>{jobTitle}</h3>
     <p>{jobDescription}</p>
     <Link
       text="More about the company"
@@ -38,6 +47,10 @@ const {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
+
+    @media (max-width: 820px) {
+      flex-wrap: wrap;
+    }
   }
 
   img {
@@ -45,13 +58,39 @@ const {
     border: solid 1px rgb(39, 39, 42, 1);
   }
 
-  .left {
+  .info {
     display: flex;
-    gap: var(--flex-gap-24);
+    flex-direction: column;
+  }
+
+  .info-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .date {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
   }
 
   .box {
     width: 100%;
+  }
+
+  .left {
+    display: flex;
+    gap: var(--flex-gap-24);
   }
 
   .icon {
