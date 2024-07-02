@@ -1,0 +1,61 @@
+---
+import { Icon } from "astro-icon/components";
+import Link from "./Link.astro";
+
+const {
+  companyName,
+  jobTitle,
+  jobDescription,
+  linkedInUrl,
+  period,
+  logoUrl
+} = Astro.props;
+---
+<div class="experience-container">
+  <div class="left box">
+    <img src={logoUrl} alt={`${companyName}`} width="50px" height="50px"/>
+    <h2>{jobTitle}</h2>
+    <!-- <Icon name="ri:calendar-fill" class="icon" aria-label="period" />
+    <p>{period.from} - {period.to}</p> -->
+  </div>
+  <div class="right box">
+    <h3>{companyName}</h3>
+    <p>{jobDescription}</p>
+    <Link
+      text="More about the company"
+      href={linkedInUrl}
+      icon="ri:arrow-right-line"
+      iconPosition="right"
+    />
+   </div>
+</div>
+
+<style>
+  .experience-container {
+    display: flex;
+    gap: var(--flex-gap-24);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  img {
+    border-radius: .5rem;
+    border: solid 1px rgb(39, 39, 42, 1);
+  }
+
+  .left {
+    display: flex;
+    gap: var(--flex-gap-24);
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 1rem;
+    color: var(--color-shy-white);
+  }
+</style>

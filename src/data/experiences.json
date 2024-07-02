@@ -1,0 +1,46 @@
+[
+  {
+    "companyName": "Dynatrace",
+    "jobTitle": "Software Egineer II & Product Owner",
+    "jobDescription": "This project aims to create an interactive and educational visualization of Conway's Game of Life, a famous cellular automaton devised by the British mathematician John Horton Conway in 1970.",
+    "linkedInUrl": "https://www.linkedin.com/company/dynatrace/",
+    "period": {
+      "from": "May 2022",
+      "to": "Ongoing"
+    },
+    "logoUrl": "/assets/logos/dynatrace_logo.jpeg"
+  },
+  {
+    "companyName": "Fourthline",
+    "jobTitle": "Software Egineer",
+    "jobDescription": "This project aims to create an interactive and educational visualization of Conway's Game of Life, a famous cellular automaton devised by the British mathematician John Horton Conway in 1970.",
+    "linkedInUrl": "https://www.linkedin.com/company/fourthline-kyc/",
+    "period": {
+      "from": "Jan 2021",
+      "to": "May 2022"
+    },
+    "logoUrl": "/assets/logos/fourthline_kyc_logo.jpeg"
+  },
+  {
+    "companyName": "Cirsa",
+    "jobTitle": "Software Egineer",
+    "jobDescription": "This project aims to create an interactive and educational visualization of Conway's Game of Life, a famous cellular automaton devised by the British mathematician John Horton Conway in 1970.",
+    "linkedInUrl": "https://www.linkedin.com/company/cirsa/",
+    "period": {
+      "from": "Jul 2019",
+      "to": "Dec 2020"
+    },
+    "logoUrl": "/assets/logos/cirsa_logo.jpeg"
+  },
+  {
+    "companyName": "WheelHub",
+    "jobTitle": "Software Egineer",
+    "jobDescription": "This project aims to create an interactive and educational visualization of Conway's Game of Life, a famous cellular automaton devised by the British mathematician John Horton Conway in 1970.",
+    "linkedInUrl": "https://www.linkedin.com/company/wheel-hub/",
+    "period": {
+      "from": "Feb 2019",
+      "to": "Jul 2019"
+    },
+    "logoUrl": "/assets/logos/wheel_hub_logo.jpeg"
+  }
+]

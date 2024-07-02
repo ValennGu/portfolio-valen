@@ -3,10 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Project from '../components/Project.astro';
 
 import projects from './../data/projects.json';
+import experiences from './../data/experiences.json';
+import Experience from '../components/Experience.astro';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  <h1>Projects</h1>
-  
   {projects.map(p => 
     <Project
       title={p.title}
@@ -16,6 +16,14 @@ import projects from './../data/projects.json';
       actions={p.actions}
     />
   )}
-  <h1>Experience</h1>
-  <h1>Who I am</h1>
+  {experiences.map(e => 
+    <Experience
+      companyName={e.companyName}
+      jobTitle={e.jobTitle}
+      jobDescription={e.jobDescription}
+      linkedInUrl={e.linkedInUrl}
+      period={e.period}
+      logoUrl={e.logoUrl}
+    />
+  )}
 </BaseLayout>

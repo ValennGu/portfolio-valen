@@ -1,6 +1,8 @@
 :root {
-  --color-clear-white: #e4e4e7;
-  --color-shy-white: #a1a1aa;
+  --color-clear-white: #E4E4E7;
+  --color-shy-white: #A1A1AA;
+  --color-accent: #928BF9;
+  --flex-gap-24: 24px;
   --breakpoint-820: 820px;
 }
 
@@ -9,9 +11,11 @@ html {
   font-size: 1rem;
   line-height: 1.75;
 }
+
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
+
 body {
   margin: 0;
 }
@@ -23,12 +27,21 @@ h1 {
   margin-bottom: .66em;
   color: var(--color-clear-white);
 }
+
 h2 {
   font-size: 1.5em;
   font-weight: 600;
   margin: 0;
   margin-bottom: .66em;
   color: var(--color-clear-white);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: .66em;
+  color: var(--color-accent);
 }
 
 p {
