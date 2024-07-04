@@ -1,29 +1,45 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AboutSection from '../components/AboutSection.astro';
 import Project from '../components/Project.astro';
-
+import Experience from '../components/Experience.astro';
+import Divider from '../components/Divider.astro';
 import projects from './../data/projects.json';
 import experiences from './../data/experiences.json';
-import Experience from '../components/Experience.astro';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  {projects.map(p => 
-    <Project
-      title={p.title}
-      description={p.description}
-      thumbnail={p.thumbnail}
-      technologies={p.technologies}
-      actions={p.actions}
-    />
-  )}
-  {experiences.map(e => 
-    <Experience
-      companyName={e.companyName}
-      jobTitle={e.jobTitle}
-      jobDescription={e.jobDescription}
-      linkedInUrl={e.linkedInUrl}
-      period={e.period}
-      logoUrl={e.logoUrl}
-    />
-  )}
+  <AboutSection />
+  <section>
+    <h1>Projects</h1>
+    <Divider />
+    {projects.map(p => 
+      <Project
+        title={p.title}
+        description={p.description}
+        thumbnail={p.thumbnail}
+        technologies={p.technologies}
+        actions={p.actions}
+      />
+    )}
+  </section>
+  <section>
+    <h1>Experience</h1>
+    <Divider />
+    {experiences.map(e => 
+      <Experience
+        companyName={e.companyName}
+        jobTitle={e.jobTitle}
+        jobDescription={e.jobDescription}
+        linkedInUrl={e.linkedInUrl}
+        period={e.period}
+        logoUrl={e.logoUrl}
+      />
+    )}
+  </section>
 </BaseLayout>
+
+<style>
+  section {
+    margin: 0 0 5rem 0;
+  }
+</style>

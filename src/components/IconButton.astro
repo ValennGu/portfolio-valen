@@ -8,8 +8,23 @@ const { url, icon } = Astro.props;
 </a>
 
 <style>
+  a {
+    background-color: rgb(24, 24, 27, 1);
+    color: rgb(228, 228, 231, 1);
+    border: solid 1px rgb(63, 63, 70, 1);
+    border-radius: 30px;
+    padding: .75rem;
+    display: flex;
+    align-self: center;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(39, 39, 42, .7);
+    }
+  }
+
   .icon {
-    color: var(--accent--primary-color);
-    font-size: 36px;
+    color: var(--color-clear-white);
+    font-size: 2rem;
   }
 </style>

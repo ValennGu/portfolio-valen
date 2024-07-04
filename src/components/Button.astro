@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { text, icon } = Astro.props; 
+---
+<button>
+  { text }
+  <Icon name={icon} class="icon" aria-label={text} />
+</button>
+
+<style>
+  button {
+    display: flex;
+    gap: var(--flex-gap-5);
+    align-items: center;
+    background-color: var(--color-accent);
+    color: #070708;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-accent-hover);
+    }
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+</style>

@@ -1,0 +1,30 @@
+---
+import Button from "./Button.astro";
+import Divider from "./Divider.astro";
+import IconButton from "./IconButton.astro";
+
+---
+<section>
+  <div class="title">
+    <h1>Who I am</h1>
+    <div class="hello">
+      <IconButton url="https://github.com/ValennGu" icon="ri:github-fill"/>
+      <IconButton url="https://www.linkedin.com/in/valentin-gutierrez-275409161/" icon="ri:linkedin-box-fill"/>
+    </div>
+  </div>
+  <Divider />
+  <p>Hello there</p>
+  <Button text="Check out my LinkedIn" icon="ri:linkedin-box-fill"/>
+</section>
+
+<style>
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hello {
+    display: flex;
+    gap: 5px;
+  }
+</style>
