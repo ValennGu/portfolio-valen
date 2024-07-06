@@ -3,6 +3,12 @@ import Button from "./Button.astro";
 import Divider from "./Divider.astro";
 import IconButton from "./IconButton.astro";
 
+import aboutx from './../data/about.json';
+
+const about = `
+  Hey! My name is Valentin, I'm a software engineer based in Barcelona. <br />
+  I've been building web applications for more than 7 years now with technologies like Angular, React, Vue, Svelte, Javascript and Typescript.
+`
 ---
 <section>
   <div class="title">
@@ -13,7 +19,7 @@ import IconButton from "./IconButton.astro";
     </div>
   </div>
   <Divider />
-  <p>Hello there</p>
+  <p set:html={aboutx.description} />
   <Button text="Check out my LinkedIn" icon="ri:linkedin-box-fill"/>
 </section>
 
