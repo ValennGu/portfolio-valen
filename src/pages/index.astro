@@ -6,10 +6,17 @@ import Experience from '../components/Experience.astro';
 import Divider from '../components/Divider.astro';
 import projects from './../data/projects.json';
 import experiences from './../data/experiences.json';
+
+
+import HeroSection from '../components/HeroSection.astro';
+import DownloadSection from '../components/DownloadSection.astro';
+import pageContent from './../data/page-content.json';
 ---
 <BaseLayout title='Valentin Gutierrez'>
-  <AboutSection />
-  <section>
+  <HeroSection text={pageContent.greeting} />
+  <DownloadSection text={pageContent.download} />
+  <!-- <AboutSection /> -->
+  <!-- <section>
     <h1>Projects</h1>
     <Divider />
     {projects.map(p => 
@@ -21,8 +28,8 @@ import experiences from './../data/experiences.json';
         actions={p.actions}
       />
     )}
-  </section>
-  <section>
+  </section> -->
+  <!-- <section>
     <h1>Experience</h1>
     <Divider />
     {experiences.map(e => 
@@ -35,11 +42,11 @@ import experiences from './../data/experiences.json';
         logoUrl={e.logoUrl}
       />
     )}
-  </section>
+  </section> -->
 </BaseLayout>
 
 <style>
-  section {
+  /* section {
     margin: 0 0 5rem 0;
-  }
+  } */
 </style>
