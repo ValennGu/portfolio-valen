@@ -1,12 +1,4 @@
 :root {
-  --color-clear-white: #E4E4E7;
-  --color-shy-white: #A1A1AA;
-  --color-accent: #928BF9;
-  --color-accent-hover: #B8B5FD;
-  --flex-gap-24: 24px;
-  --flex-gap-5: 5px;
-  --breakpoint-820: 820px;
-
   /* Page */
   --color-white: #FfFFFF;
   --color-brand-white: #F9FFFF;
@@ -28,20 +20,16 @@
   --color-icon-css: #1A6DB4;
   --color-icon-react: #5CD1F3;
   --color-icon-firebase: #F7C529;
-
-
 }
 
 html {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-  line-height: .95;    
-  text-shadow: var(--color-white-shine) 0 0 4px; 
 }
-
+/* 
 * {
   box-sizing: content-box;
-}
+} */
 
 body {
   margin: 0;
@@ -51,6 +39,8 @@ h1 {
   font-size: 8em;
   font-weight: 800;
   color: var(--color-brand-white);
+  line-height: .95;
+  text-shadow: var(--color-white-shine) 0 0 4px; 
   margin: 2.85rem 0 2.85rem 0;
 }
 

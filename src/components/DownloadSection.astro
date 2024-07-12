@@ -1,16 +1,20 @@
 ---
 import { Icon } from "astro-icon/components";
+import Button from "./Button.astro";
 
 const { text } = Astro.props;
-const iconName = "material-symbols-light:lab-profile-outline-rounded"
+const iconNameSection = "material-symbols-light:lab-profile-outline-rounded";
+const iconNameButton = "material-symbols-light:lab-profile-outline-rounded";
 ---
 <section>
   <div class="flex">
     <div class="left">
-      <Icon name={iconName} class="icon" aria-label={text} />
+      <div class="icon-shine" />
+      <Icon name={iconNameSection} class="icon" aria-label={text} />
       <div class="gradient" />
     </div>
-    <!-- <h1 set:html={text}></h1> -->
+    <button set:html={text}></button>
+    <Button text={text} icon={iconNameButton} />
   </div>
 </section>
 
@@ -26,13 +30,29 @@ const iconName = "material-symbols-light:lab-profile-outline-rounded"
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 2rem;
   }
 
   .icon {
     font-size: 2.5rem;
-    color: var(--color-brand-white)
+    color: var(--color-brand-white);
+    z-index: 1;
+  }
+  
+  .icon-shine {
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(
+      #342f7c 0%,
+      #3b386b 10%,
+      #2b2763 20%,
+      #14122a 50%,
+      var(--color-background) 75%
+    );
+    position: absolute;
+    margin-top: -15px;
+    z-index: 0;
   }
 
   .gradient {
